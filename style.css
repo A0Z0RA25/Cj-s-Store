@@ -1,0 +1,16 @@
+.container{
+    border: solid;
+    position: absolute;
+    left: 0%;
+    padding: 10px;
+}
+.header{
+    text-align: center;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.footer h1{
+    font-size: 20px;
+}
