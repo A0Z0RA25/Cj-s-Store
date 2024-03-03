@@ -5,15 +5,28 @@
     top: 10%;
     padding: 10px;
     margin: 0 20px 0 20px;
-    height:530px;
+    height:590px;
+    width: 325px;
     border-radius: 10px;
     font-family: sans-serif;
     background-color: #2D3250;
     color: #F6F1EE;
 }
+.nav-bar ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: #ffc635;
+    margin: 0 20px;
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: end;
+}
 .header{
     display: flex;
     align-items: center;
+    font-size: 10px;
+    margin: 20px 0 20px 0;
 }
 .header img{
     height: 60px;
@@ -23,7 +36,7 @@
     margin-right: 10px;
 }
 .header h1{
-    color: #ff0808;
+    color: #fffffff3;
     text-align: center;
 }
 ul li{
@@ -55,4 +68,13 @@ ul li{
     background-color:#fff;
     border-radius: 20px;
     width: 200px;
+}
+/* about */
+.about-page{
+    padding: 0 10px;
+    display: none;
+}
+.about-page .quote{
+    font-size: 20px;
+    text-align: center;
 }
