@@ -5,61 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
+    <div class="strat">
+        <button class="close" onclick="close()">Close</button>
+    </div>
+
     <div class="container">
         <div class="nav-bar">
+            <h1 class="logo">
+                <img src="stem.png" alt="">
+            </h1>
             <ul>
-                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="home" onclick="home()">Home</a></li>
                 <li><a href="#" id="about">About</a></li>
             </ul>
         </div>
         <div class="home-page">
             <div class="header">
                 <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.15752-9/328435587_701311678407551_2930888235872204114_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeH1Gj0MbgOhyQDC3aHzF7gBaBEaBCmtfxZoERoEKa1_FpfN1kc6oWF6NUO7bhPelj5gyTIaSHcyt5ZvVMvV7zIb&_nc_ohc=4Ea_AkZxrBIAX88TgLU&_nc_ht=scontent.fmnl30-2.fna&oh=03_AdSUkuQiT_JU_2DOaw21Cs8tMKO5a6i3ZNxwtnLXo7C_DA&oe=660C4825" alt="">
-                <h1>CJ's Sari-Sari Store</h1>
+                <h1>Aozora's Store</h1>
             </div>
-            <hr>
-            <div class="item-list contem">
-                <h3 class="item-title">Available Now!</h3>
-                <div class="items">
-                    <ul>
-                        <li><span class="specific-name">Ballpen(deli)</span> = 15pesos</li>
-                        <li><span class="specific-name">Correction Tape</span> = 15pesos</li>
-                    </ul>
+            <div class="product-list contem">
+                <div class="product">
+                    <div class="ballpen">
+                        <img src="https://img.ws.mms.shopee.ph/ph-11134201-23030-qhiomk2r6uova6" alt="" srcset="">
+                        <h1 class="product-name">Deli Ballpen(0.35)</h1>
+                        <h3 class="product-price">Price:<span id="price">15</span></h3>
+                        <button class="buy-btn">Buy now</button>
+                    </div>
+                    <div class="graphing-paper">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vUIK_CxLhXC3Qac1HF2vmedl_MHJ72IMjQ&s" alt="">
+                        <h1 class="product-name">Graphing paper</h1>
+                        <h3 class="product-price">Price:<span id="price">2</span></h3>
+                        <button class="buy-btn">Buy now</button>
+                    </div>
                 </div>
-                <hr>
-                <div class="soon-items contem">
-                    <h3 class="item-title">Available Soon</h1>
-                    <ul>
-                        <li><span class="specific-name">1/4 pad paper</span></li>
-                        <li><span class="specific-name">1/2 crosswise</span></li>
-                        <li><span class="specific-name">1/2 crosswise</span></li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="special-items contem">
-                    <h3 class="item-title">Special Products</h3>
-                    <ul>
-                        <li><span class="specific-name">Soju</span> = 25pesos per tagay</li>
-                        <li><span class="specific-name">Lambanog</span> = 10pesos per tagay</li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="freebies contem">
-                    <h3 class="item-title">Freebies</h3>
-                    <ul>
-                        <li><span class="specific-name">5pcs of graphing paper</span></li>
-                        <li><span class="specific-name">Free Wifi</span></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="footer">
-                <button class="order-btn"><a href="https://www.facebook.com/carljaspera.ramos" class="messenger-link" target="_blank">Order Now!</a></button>
-            </div>
         </div>
     
         <div class="about-page">
