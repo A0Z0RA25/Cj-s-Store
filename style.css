@@ -21,15 +21,14 @@
     margin-bottom: -20px;
 }
 .about-page img{
-    margin: 20px 50px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 110px;
+    border: solid;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 .bascal{
     color: rgb(106, 236, 106);
-}
-.home-page{
-    
 }
 #about i{
     rotate: 180deg;
@@ -48,24 +47,26 @@
 }
 
 .strat{
-    width: 300px;
+    width: 250px;
     height: 500px;
     border-radius: 10px;
-    background-color: #F7EEDD;
+    background-color: #008DDA;
     position: absolute;
-    top: 10%;
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
+    top: 6%;
     border: solid;
     padding: 20px;
-    justify-content: left;
+    text-align: justify;
     word-wrap: break-word;
-    font-size: 20px;
+    word-spacing: 1px;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: #F7EEDD;
     line-height: 25px;
 }
-
+.strat button{
+    border-radius: 10px;
+    padding: 5px 14px;
+}
 .logo img{
     width: 100px;
     height: 50px;
@@ -93,7 +94,7 @@ body{
     border: none;
     text-align: center;
     display: flex;
-    margin: auto;
+    margin: 0 auto -30px auto;
     justify-content: space-evenly;
 }
 .nav-bar ul{
@@ -117,7 +118,7 @@ body{
     border-radius: 20px;
     height: 35rem;
     width: 400px;
-    margin: 50px 20px;
+    margin: 30px 20px;
     padding: 0 10px;
     overflow: hidden;
     overflow-y: scroll;
@@ -190,64 +191,7 @@ body{
     justify-content: space-evenly;
     flex-direction: row;
 }
-.hinge1{
-    animation: hinge 5s infinite; 
-}
-@keyframes hinge1{
-    0% {
-      transform: rotate(0deg) ;
-    }
-    50%{
-        transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(60deg);
-      opacity: 0;
-    }
-  }
-  
-  .hinge2{
-    animation: hinge 9s ease-out; 
-}
-@keyframes hinge2{
-    0% {
-      transform-origin: top left;
-      animation-timing-function: ease-in-out;
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(60deg) translateX(0);
-      opacity: 0;
-    }
-  }
-  .hinge3{
-    animation: hinge 7s ease-out; 
-}
-@keyframes hinge3{
-    0% {
-      transform-origin: top left;
-      animation-timing-function: ease-in-out;
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(60deg) translateX(0);
-      opacity: 0;
-    }
-  }
-  .hinge4{
-    animation: hinge 11s ease-out; 
-}
-@keyframes hinge4{
-    0% {
-      transform-origin: top left;
-      animation-timing-function: ease-in-out;
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(60deg) translateX(0);
-      opacity: 0;
-    }
-  }
+
 
 /**/
 
