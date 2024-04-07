@@ -1,5 +1,50 @@
 .about-page{
     display: none;
+    text-align: justify;
+    margin: 0 20px;
+    line-height: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-page h1{
+    font-size: 15px;
+    font-family: "Merriweather", serif;
+    margin-top: 40px;
+    display: none;
+    word-spacing: 1px;
+}
+.about-page button{
+    padding: 10px 10px;
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #008DDA;
+    margin-bottom: -20px;
+}
+.about-page img{
+    margin: 20px 50px;
+    width: 100px;
+    height: 100px;
+}
+.bascal{
+    color: rgb(106, 236, 106);
+}
+.home-page{
+    
+}
+#about i{
+    rotate: 180deg;
+}
+#about i:hover{
+    transform: rotate(90deg);
+}
+#home i:hover{
+    transform: rotate(-90deg);
+}
+.product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
 }
 
 .strat{
@@ -19,11 +64,13 @@
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     line-height: 25px;
+   display: none;
 }
 
 .logo img{
     width: 100px;
     height: 50px;
+    margin-left: 30px;
 }
 
 body{
@@ -45,7 +92,6 @@ body{
 
 .nav-bar {
     border: none;
-    border-bottom: solid; 
     text-align: center;
     display: flex;
     margin: auto;
@@ -54,9 +100,8 @@ body{
 .nav-bar ul{
     display: flex;
     list-style: none;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
+    margin: auto;
 }
 .nav-bar ul li a{
     text-decoration: none;
@@ -73,13 +118,14 @@ body{
     border-radius: 20px;
     height: 35rem;
     width: 400px;
-    margin: 50px 5px;
+    margin: 50px 20px;
     padding: 0 10px;
     overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
     background-color: #008DDA;
+    box-shadow: 15px 15px hsla(0, 0%, 50%, 0.389);
 }
 /**/
 .product{
@@ -89,9 +135,6 @@ body{
 .product img{
     width: 200px;
     height: 200px;
-}
-.product-name, .product-price, .buy-btn{
-    
 }
 .product-name{
     font-family: "Bebas Neue", sans-serif;
@@ -112,6 +155,10 @@ body{
 #price{
     font-weight: 900;
 }
+.buy-btn a{
+    text-decoration: none;
+    color: #F7EEDD;
+}
 .buy-btn{
     padding: 10px 5px 10px 5px;
     color: #F7EEDD;
@@ -121,7 +168,7 @@ body{
     background-color: #41C9E2;
     margin-top: -7px;
 }
-.buy-btn:hover{
+.buy-btn a:hover{
     color: hsl(120, 100%, 2%);
 
 }
@@ -135,7 +182,73 @@ body{
     background-color: #F7EEDD;
     color: #008DDA;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
 }
+.stars{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.hinge1{
+    animation: hinge 5s infinite; 
+}
+@keyframes hinge1{
+    0% {
+      transform: rotate(0deg) ;
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(60deg);
+      opacity: 0;
+    }
+  }
+  
+  .hinge2{
+    animation: hinge 9s ease-out; 
+}
+@keyframes hinge2{
+    0% {
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(60deg) translateX(0);
+      opacity: 0;
+    }
+  }
+  .hinge3{
+    animation: hinge 7s ease-out; 
+}
+@keyframes hinge3{
+    0% {
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(60deg) translateX(0);
+      opacity: 0;
+    }
+  }
+  .hinge4{
+    animation: hinge 11s ease-out; 
+}
+@keyframes hinge4{
+    0% {
+      transform-origin: top left;
+      animation-timing-function: ease-in-out;
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(60deg) translateX(0);
+      opacity: 0;
+    }
+  }
 
 /**/
+
