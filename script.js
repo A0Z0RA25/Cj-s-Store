@@ -37,7 +37,7 @@ if (person == "CJ"){
     const strat = document.querySelector(".strat");
     strat.appendChild(para);
 
-}else if(person == "Shermel" || person == "shermel"){
+}else if(person == "shermel" || person == "Shermel"){
     const para = document.createElement("p");
     const node = document.createTextNode(`Yang si ${person} 'di pa yan nakaka move on at laging sinasabi na wala na raw pake pero todo stalk parin.`);
     para.appendChild(node);
