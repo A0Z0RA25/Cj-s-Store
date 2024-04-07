@@ -32,7 +32,7 @@ function showAbout(){
     }
 }
 //
-//let person = prompt("Enter your name");
+let person = prompt("Enter your name");
 const names = document.querySelector(".name-intro");
 names.textContent = `Hi ` + person + `, WELCOME to`;
 if (person === "CJ"){
