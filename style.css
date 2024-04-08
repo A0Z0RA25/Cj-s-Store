@@ -1,15 +1,16 @@
 .about-page{
     display: none;
     text-align: justify;
+    justify-content: center;
     margin: 0 20px;
     line-height: 23px;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 60px;
 }
 .about-page h1{
     font-size: 15px;
     font-family: "Merriweather", serif;
     margin-top: 40px;
-    display: none;
     word-spacing: 1px;
 }
 .about-page button{
@@ -18,11 +19,15 @@
     font-weight: bold;
     border-radius: 10px;
     color: #008DDA;
-    margin-bottom: -20px;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+.about-page .message{
+    display: none;
 }
 .about-page img{
-    width: 150px;
-    height: 110px;
+    width: 200px;
+    height: 200px;
     border: solid;
     border-radius: 10px;
     margin-top: 10px;
@@ -62,10 +67,33 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #F7EEDD;
     line-height: 25px;
+    z-index: 1;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+.strat p{
+    font-size: 13px;
+}
+.strat h1{
+    font-size: 25px;
+    word-spacing: 1px;
+    text-align: center;
+}
+.strat .greatings{
+    border: none;
+    padding: 20px 20px 30px 20px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #006093e4;
 }
 .strat button{
     border-radius: 10px;
     padding: 5px 14px;
+    background-color: #41C9E2;
+    font-weight: bold;
+    color: #060101;
 }
 .logo img{
     width: 100px;
@@ -195,3 +223,37 @@ body{
 
 /**/
 
+.animated {
+  animation: animate 2s ease-in-out forwards;
+}
+@keyframes animate {
+  20%,
+  60% {
+    transform: rotate(70deg);
+  }
+  40%,
+  80% {
+    transform: rotate(55deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(600px);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .btn {
+    font-size: 1rem;
+  }
+  .hinge {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+  .hinge {
+    font-size: 1rem;
+  }
+}
