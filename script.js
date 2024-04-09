@@ -60,7 +60,7 @@ else if(person === "" || person == null){
 
 
     const para = document.createElement("p");
-    const node = document.createTextNode(`Yan si ${person} isa yan sa pinaka mabait ko na kaklase eh, alam ko kaya sya pumunta sa website na 'to para bumili ng tinda ko. Napaka bait talagang tao aba lagi ko yan ipagdarasal kapag bumili yan.'😇😇😇`);
+    const node = document.createTextNode(`Musta pareng ${person}, pag bumili ka ng ballpen ko gaganda ang sulat mo. Pero alam mo kung ano mas maganda?`);
     para.appendChild(node);
     const strat = document.querySelector(".greatings");
     strat.appendChild(para);
