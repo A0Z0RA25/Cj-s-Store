@@ -90,3 +90,27 @@ let hinge = document.querySelector('.strat')
 btn.addEventListener('click', () => {
   hinge.classList.toggle('animated')
 })
+
+//
+
+function showAtrri(){
+    const ballpenHidden = document.querySelector(".hidden");
+    const ballAttri = document.querySelector(".attributes");
+
+    if(ballpenHidden.style.display = "block"){
+        ballpenHidden.style.display = "none";
+        ballAttri.style.display = "block";
+    } else{
+        ballpenHidden.style.display = "none";
+        ballAttri.style.display = "block";
+    }
+    
+}
+
+function attriBtn(){
+    const ballpenHidden = document.querySelector(".hidden");
+    const ballAttri = document.querySelector(".attributes");
+
+    ballAttri.style.display = "none"
+    ballpenHidden.style.display = "block"
+}
